@@ -1,0 +1,14 @@
+/* @font-face {
+  font-family: "Rubikiso";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("./RubikIso-Regular.ttf") format("woff2");
+} */
+@font-face {
+  font-family: "Tortoise";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("./TortoiseHollow.ttf") format("woff2");
+}

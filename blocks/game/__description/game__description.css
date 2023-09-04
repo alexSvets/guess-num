@@ -1,0 +1,8 @@
+.game__description {
+  color: white;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.game__description:last-child {
+  padding-bottom: 0;
+}

@@ -1,0 +1,6 @@
+.game__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  display: none;
+}

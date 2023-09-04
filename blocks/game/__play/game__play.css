@@ -1,0 +1,6 @@
+.game__play {
+  border: 1px solid white;
+  margin-top: 100px;
+  display: flex;
+  padding: 5px;
+}

@@ -3,6 +3,7 @@ const play = document.querySelector(".game__play");
 const container = document.querySelector(".game__list");
 const buttons = document.querySelectorAll(".game__button");
 const secretNum = Math.ceil(Math.random() * 10);
+const popup = document.querySelector(".popup");
 let tries = 0;
 
 console.log(secretNum);
@@ -16,7 +17,7 @@ function guessNum(num) {
   }
   if (secretNum != num) {
     tries++;
-    alert(`Вы не угадали. Осталось ${tries} попыток` );
+    alert(`Вы не угадали. Осталось ${tries} попыток`);
   }
 }
 

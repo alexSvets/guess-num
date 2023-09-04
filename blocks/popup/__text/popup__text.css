@@ -1,0 +1,6 @@
+.popup__text {
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
+}

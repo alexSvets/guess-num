@@ -11,3 +11,8 @@
 @import url("./blocks/game/__play-button/game__play-button.css");
 @import url("./blocks/game/__button/game__button.css");
 @import url("./blocks/game/__list/game__list.css");
+@import url("./blocks/popup/popup.css");
+@import url("./blocks/popup/__text/popup__text.css");
+@import url("./blocks/popup/_is-openned/popup_is-openned.css");
+@import url("./blocks/popup/__content/popup__content.css");
+@import url("./blocks/popup/__button/popup__button.css");

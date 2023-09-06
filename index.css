@@ -2,7 +2,7 @@
 @import url("./vendor/fonts/fonts.css");
 @import url("./blocks/body/body.css");
 
-/* section */
+/* game */
 @import url("./blocks/game/game.css");
 @import url("./blocks/game/__wrapper/game__wrapper.css");
 @import url("./blocks/game/__title/game__title.css");
@@ -11,6 +11,9 @@
 @import url("./blocks/game/__play-button/game__play-button.css");
 @import url("./blocks/game/__button/game__button.css");
 @import url("./blocks/game/__list/game__list.css");
+@import url("./blocks/game/__counter/game__counter.css");
+@import url("./blocks/game/__tries/game__tries.css");
+/* popup */
 @import url("./blocks/popup/popup.css");
 @import url("./blocks/popup/__text/popup__text.css");
 @import url("./blocks/popup/_is-openned/popup_is-openned.css");

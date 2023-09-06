@@ -2,13 +2,14 @@ const play = document.querySelector(".game__play");
 const container = document.querySelector(".game__list");
 const buttons = document.querySelectorAll(".game__button");
 const counter = document.querySelector(".game__tries");
-const text = document.querySelector(".game__counter")
+const text = document.querySelector(".game__counter");
 const secretNum = Math.ceil(Math.random() * 10);
 const popup = document.querySelector(".popup");
 const popupWon = document.querySelector(".popup_type-won");
 const popupLose = document.querySelector(".popup_type-lose");
 const popupButtonWon = document.querySelector(".popup__button-won");
 const popupButtonLose = document.querySelector(".popup__button-lose");
+const popupContent = document.querySelector(".popup__content");
 let tries = 0;
 
 function guessNum(num) {
@@ -33,7 +34,7 @@ buttons.forEach((button) => {
 function hangingButtons() {
   container.style.display = "flex";
   play.style.display = "none";
-  text.style.display = "block"
+  text.style.display = "block";
 }
 
 function popupClose(popup) {
@@ -44,3 +45,10 @@ function popupClose(popup) {
 play.addEventListener("click", hangingButtons);
 popupButtonWon.addEventListener("click", () => popupClose(popupWon));
 popupButtonLose.addEventListener("click", () => popupClose(popupLose));
+
+// document.addEventListener('click', (e)=>{
+//   const click = e.composedPath().includes(popupContent)
+//   if(!click){
+//     popupContent.style.display = "none"
+//   }
+// })

@@ -13,6 +13,7 @@
 @import url("./blocks/game/__list/game__list.css");
 @import url("./blocks/game/__counter/game__counter.css");
 @import url("./blocks/game/__tries/game__tries.css");
+
 /* popup */
 @import url("./blocks/popup/popup.css");
 @import url("./blocks/popup/__text/popup__text.css");

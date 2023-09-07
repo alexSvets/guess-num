@@ -9,7 +9,7 @@ const popupWon = document.querySelector(".popup_type-won");
 const popupLose = document.querySelector(".popup_type-lose");
 const popupButtonWon = document.querySelector(".popup__button-won");
 const popupButtonLose = document.querySelector(".popup__button-lose");
-const popupContent = document.querySelector(".popup__content");
+const allPopups = document.querySelectorAll(".popup");
 let tries = 0;
 
 function guessNum(num) {
@@ -42,13 +42,15 @@ function popupClose(popup) {
   window.location.reload();
 }
 
+function closePopupOverlay(event) {
+  if (event.target.classList.contains("popup")) {
+    popupClose(event.target);
+  }
+}
+allPopups.forEach((popup) => {
+  popup.addEventListener("mousedown", closePopupOverlay);
+});
+
 play.addEventListener("click", hangingButtons);
 popupButtonWon.addEventListener("click", () => popupClose(popupWon));
 popupButtonLose.addEventListener("click", () => popupClose(popupLose));
-
-// document.addEventListener('click', (e)=>{
-//   const click = e.composedPath().includes(popupContent)
-//   if(!click){
-//     popupContent.style.display = "none"
-//   }
-// })
